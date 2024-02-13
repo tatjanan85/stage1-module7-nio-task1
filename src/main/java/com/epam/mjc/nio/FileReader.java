@@ -72,7 +72,7 @@ public class FileReader {
             ClassLoader loader = FileReader.class.getClassLoader();
             File file = new File(loader.getResource("Profile.txt").toURI());
             FileReader reader = new FileReader();
-            System.out.println(reader.getDataFromFile(file));
+            reader.getDataFromFile(file);
         } catch (Exception e) {
             e.printStackTrace();
         }
